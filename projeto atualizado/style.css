@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+    background-color: #dc143c;
+}
+
+img{
+    max-width: 3000px;
+    width: 2000px;
+    height: 500px;
+}
+main{
+    background-color: #dc143c;
+}
