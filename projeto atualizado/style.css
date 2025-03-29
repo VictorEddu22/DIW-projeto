@@ -1,13 +1,79 @@
 h1{
     text-align: center;
-    background-color: #dc143c;
+    color: black;
+    font-size: 100px;
 }
-
+header{
+    color: crimson;
+    background-color: crimson;
+   
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
 img{
-    max-width: 3000px;
-    width: 2000px;
-    height: 500px;
+   
+    width: 900px;
+    height: 600px;
 }
 main{
-    background-color: #dc143c;
+    background-color:black;
+}
+.card {
+    height: 550px;  
+    overflow: hidden; 
+    margin: 30px;  
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;  
+  }
+
+  
+  .card-img-top {
+    max-height: 370px;  
+    object-fit: cover;  
+    margin: 4px;
+    border-radius: 20px;
+    
+  }
+ 
+  .card-body {
+    padding: 10px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+  }
+
+  .card-title {
+    font-size: 1.2rem;  /* Ajustando o tamanho do título*/
+    margin-bottom: 10px;  /* Dá um pouco de espaço abaixo do título */
+  }
+
+  .card-text {
+    font-size: 0.9rem;  /* Reduzindo o tamanho do texto */
+    flex-grow: 1;  /* Faz o texto ocupar o espaço restante */
+    margin-bottom: 10px;   /*Dá um pouco de espaço abaixo do texto */
+}
+h2{
+    font-size: 80px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+    text-align: center;
+}
+h4{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+      text-align: center;
+  }
+
+a{
+    font-size: 40px;
+}
+aside{
+    background-color:rgb(220, 102, 102);
 }
