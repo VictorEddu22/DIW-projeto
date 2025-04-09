@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#mais').click(function(){
+                let contador = parseInt($('#cont').html());
+                contador++;
+                console.log(contador);
+                $('#cont').html(contador);
+                 })
+            
+            $('#menos').click(function(){
+                let contador = parseInt($('#cont').html());
+                contador-1;
+                $('#cont').html(contador);
+                if(contador<=0){
+                    $('#menos').prop('disable', true);
+                    
+                }
+            
+                  })
+                    
+
+        });
+
+  </script>
+    <title>Victor</title>
+</head>
+<body>
+    <h1>JQUER</h1>
+    <p>contador:<span id="cont">0</span></p>
+    <p><button id="menos">-1</button></p>
+    <p><button id="mais">+1</button></p>
+    
+</body>
+</html>
