@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX</title>
+</head>
+<body>
+    <h1>Últimas Noticias</h1>
+    <div id="noticias-container">
+
+    </div>
+    <script src="data.js"> </script>
+    <script>
+        const container = document.getElementById("noticias-container");
+        let noticiasContent = container.innerHTML;
+
+        for (let i=0; i < dados.noticias.length; i++){
+            let noticia = dados.noticias[i];
+            console.log(noticia.titulo);
+
+            noticiasContent += `<div class="noticia">
+                <h2>
+                    <a href="detalhes.html?idNoticias=${noticia.id}">${noticia.titulo}
+                        </a>
+                        </h2>
+                    <img src="${noticia.imagem_principal}" alt="${noticia.titulo}">
+
+                </div>
+            `;
+        }
+        container.innerHTML = noticiasContent;
+    </script>
+</body>
+</html>

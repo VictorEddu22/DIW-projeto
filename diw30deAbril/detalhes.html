@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes</title>
+</head>
+<body>
+    <script src="data.js"></script>
+    <div id ="noticias-container"></div>
+    <script>
+        const container = document.getElementById("noticias-container");
+        let params = new URLSearchParams(location.search);
+        let idNoticia = params.get("idNoticias");
+        
+        for (let i=0 ; i < dados.noticias.length; i++){
+            if ( dados.noticias[i].id == parseInt(idNoticia)){
+                let noticia = dados.noticias[i];
+                console.log(noticia);
+        container.innerHTML = `<div class="noticia">
+            <h2><a href ="detalhes.html?idNoticias=${noticia.id}"></a></h2>
+                <p><em> Por ${noticia.autor} - ${noticia.data}</em><p>
+                <img src ="${noticia.imagem_pricipal}" alt="${noticia.titulo}">
+                <p>${noticia.descrição}</p>
+
+                <p>${noticia.conteudo}</p>
+                </div>
+         `;
+        break;
+            }
+            else{
+                container.innerHTML="<h2>Noticia não encontrada.</h2>";
+            }
+        }
+
+
+    </script>
+</body>
+</html>
