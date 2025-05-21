@@ -1,0 +1,12 @@
+[
+    {
+      "nome": "Maria Silva",
+      "email": "maria@email.com",
+      "telefone": "11999999999",
+      "cpf": "000.000.000-00",
+      "nascimento": "1990-01-01",
+      "senha": "123456",
+      "endereco": "Rua Exemplo, 123"
+    }
+  ]
+  
